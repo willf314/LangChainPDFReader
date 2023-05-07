@@ -18,7 +18,7 @@ import time
 MAX_FILES = 5      
 
 #setup webpage
-st.set_page_config(page_title="Helpful Harry", page_icon=":fish:")
+st.set_page_config(page_title="Helpful Harry")
 
 col1,col2 = st.columns(2)
 
