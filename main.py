@@ -27,7 +27,7 @@ with col1:
     st.markdown("*Give Harry documents to classify and then ask questions about the content*")
 
 with col2:
-    st.image(image="Harry.png", width=150)
+    st.image(image="harry.png", width=150)
 
 st.markdown("**Uploads docs...**")
 
