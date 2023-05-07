@@ -31,8 +31,6 @@ with col2:
 
 st.markdown("**Uploads docs...**")
 
-
-
 #allow user to choose files
 uploaded_files = st.file_uploader(label="",type=['pdf'], accept_multiple_files = True , label_visibility='collapsed')
 
@@ -51,18 +49,7 @@ if uploaded_files:
                     if text:
                         raw_text += text
                 raw_text += " [Document ends] "      
-    
-        # display the uploaded contents
-        #{raw_text[:min(len(raw_text), 500)]}
-        #st.markdown(
-        #    f"""
-        #    <div style='border: 1px solid #ccc; border-radius: 3px; padding: 10px;'>
-        #        {raw_text}                
-        #    </div>
-        #    """,
-        #    unsafe_allow_html=True,
-        #)
-
+          
         # chunk and load the content into vector database
         text_splitter = CharacterTextSplitter(
         separator = "\n",
